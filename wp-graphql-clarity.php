@@ -6,7 +6,7 @@
  * Description: GraphQL API for Microsoft Clarity
  * Author: Maurice Tadros
  * Author URI: http://www.bowriverstudio.com
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text Domain: wp-graphql-clarity
  * Domain Path: /languages/
  * Requires PHP: 7.1
@@ -34,8 +34,7 @@ add_action(
 
 		$core_dependencies = array(
 			'WPGraphQL plugin'             => class_exists( 'WPGraphQL' ),
-			'Google Site Kit'              => in_array( 'google-site-kit/google-site-kit.php', $options ),
-			'Google Site Kit Dev Settings' => in_array( 'google-site-kit-dev-settings/google-site-kit-dev-settings.php', $options ),
+			'Microsoft Clarity'              => in_array( 'microsoft-clarity/clarity.php', $options ),
 		);
 
 		$missing_dependencies = array_keys(
